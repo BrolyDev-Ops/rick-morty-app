@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Rick and Morty Characters Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación web sencilla que utiliza la API pública de Rick and Morty para mostrar una lista de personajes con funcionalidad de paginación. A continuación, te proporciono una descripción detallada del código y cómo utilizar la aplicación.
 
-## Available Scripts
+## Estructura del Proyecto
 
-In the project directory, you can run:
+El proyecto tiene varios archivos principales:
 
-### `npm start`
+index.js: Es el punto de inicio de la aplicación. Aquí se renderiza el componente principal App utilizando React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### App.js:
+Este es el componente principal que maneja la lógica de la aplicación, incluida la llamada a la API, el estado de los personajes y la información de paginación.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Paginacion.js: 
+Un componente que muestra botones de paginación (Previous y Next) para permitir la navegación entre las páginas de personajes.
 
-### `npm test`
+### CharacterList.js: 
+Presenta la lista de personajes obtenidos de la API, mostrando su imagen, nombre, especie y ubicación.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Navbar.js: 
+Un componente simple de barra de navegación que muestra el título de la aplicación.
 
-### `npm run build`
+## Cómo Utilizar
+### Instalación de Dependencias:
+![image](https://github.com/BrolyDev-Ops/rick-morty-app/assets/112824352/6b21e4fa-d4f4-4fc2-9e5d-5d3354dea7d3)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Ejecutar la Aplicación:
+![image](https://github.com/BrolyDev-Ops/rick-morty-app/assets/112824352/92b369ca-99f6-4141-b1b4-6e37d1664b7b)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Interacción con la Aplicación:
+#### La página mostrará una lista de personajes de Rick and Morty.
+#### Utiliza los botones "Previous" y "Next" para navegar entre las páginas de personajes.
+![image](https://github.com/BrolyDev-Ops/rick-morty-app/assets/112824352/d9209dce-b364-4df8-9408-310e5ebce6c0)
+![image](https://github.com/BrolyDev-Ops/rick-morty-app/assets/112824352/4fecd068-f9d6-46cc-b15d-48bf07259260)
+![image](https://github.com/BrolyDev-Ops/rick-morty-app/assets/112824352/76a66f57-7704-4942-a102-dde05ac85b91)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Estructura del Código
+### App.js: 
+Este componente principal realiza llamadas a la API y gestiona el estado de los personajes y la información de paginación. Los botones de "Previous" y "Next" llaman a funciones que actualizan la lista de personajes según la URL proporcionada por la API.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Paginacion.js: 
+Un componente de paginación simple que muestra botones "Previous" y "Next". Los botones se habilitan o deshabilitan según si existen URLs previas o siguientes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### CharacterList.js: 
+Componente que recibe la lista de personajes y los muestra en tarjetas con información básica.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Navbar.js: 
+Un componente de barra de navegación simple con el título de la aplicación.

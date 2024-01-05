@@ -1,4 +1,4 @@
-# Rick and Morty Characters Viewer
+# Rick and Morty 
 
 Este proyecto es una aplicación web sencilla que utiliza la API pública de Rick and Morty para mostrar una lista de personajes con funcionalidad de paginación. A continuación, te proporciono una descripción detallada del código y cómo utilizar la aplicación.
 
